@@ -30,6 +30,7 @@
   "url": "https://richardcedric436-dev.github.io/",
   "image": "https://richardcedric436-dev.github.io/assets/cedric.jpg",
   "email": "mailto:richardcedric436@gmail.com",
+  "telephone": "+33758674107",
   "sameAs": ["https://github.com/richardcedric436-dev"],
   "address": { "@type": "PostalAddress", "addressLocality": "Pontoise", "addressCountry": "FR" },
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "EPSI Paris" }
@@ -136,28 +137,13 @@
   .facts dt { font-size: .875rem; color: var(--ink-soft); }
   .facts dd { margin: 2px 0 0; font-weight: 600; }
 
-  /* Photo on a gingham block, taken from the shirt in the portrait */
+  /* Photo */
   .portrait { position: relative; justify-self: center; width: min(100%, 400px); }
-  .portrait::before {
-    content: "";
-    position: absolute; inset: 36px -36px -36px 36px;
-    border-radius: 10px;
-    background:
-      repeating-linear-gradient(0deg,  rgba(37, 71, 208, .62) 0 14px, transparent 14px 28px),
-      repeating-linear-gradient(90deg, rgba(242, 118, 46, .70) 0 14px, transparent 14px 28px),
-      var(--white);
-    animation: weave 1s cubic-bezier(.2, .7, .2, 1) .15s both;
-  }
   .portrait img {
     position: relative;
     width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover;
     border-radius: 10px;
-    border: 6px solid var(--white);
-    background: var(--white);
-  }
-  @keyframes weave {
-    from { clip-path: inset(0 100% 100% 0); }
-    to   { clip-path: inset(0 0 0 0); }
+    border: 0;
   }
 
   /* ---------- Sections ---------- */
@@ -239,14 +225,11 @@
     .nav a:not(.btn) { display: none; }
     .brand { font-size: .95rem; line-height: 1.2; }
     .nav .btn { white-space: nowrap; }
-    .portrait::before { inset: 24px -16px -24px 16px; }
-    .portrait { margin-right: 16px; }
     .facts { grid-template-columns: 1fr; }
   }
 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .portrait::before { animation: none; }
   }
 </style>
 </head>
@@ -285,7 +268,7 @@
       </div>
 
       <div class="portrait">
-        <img src="cedric.jpg" sizes="(max-width: 880px) 320px, 400px" width="900" height="1125" alt=" en chemise à carreaux orange et bleue" fetchpriority="high">
+        <img src="cedric.jpg" sizes="(max-width: 880px) 320px, 400px" width="900" height="1125" alt="Portrait de Yao Cedric Richard N'DRI, en chemise à carreaux orange et bleue" fetchpriority="high">
       </div>
     </div>
   </div>
@@ -423,10 +406,11 @@
   <div class="wrap">
     <div>
       <h2 id="t-contact">Vous recrutez un alternant développeur ?</h2>
-      <p>Écrivez-moi quelques lignes sur le poste. Je vous réponds avec mon CV et mes disponibilités pour un entretien.</p>
+      <p>Écrivez-moi ou appelez-moi pour parler du poste. Je vous réponds avec mon CV et mes disponibilités pour un entretien.</p>
     </div>
     <div class="actions">
       <a class="btn" href="mailto:richardcedric436@gmail.com?subject=Alternance%20d%C3%A9veloppeur%20%E2%80%93%20prise%20de%20contact">richardcedric436@gmail.com</a>
+      <a class="btn" href="tel:+33758674107">Appeler le 07 58 67 41 07</a>
       <a class="btn ghost" href="CV-Yao-Cedric-Richard-NDRI.pdf" download>Télécharger mon CV (PDF)</a>
       <a class="btn ghost" href="https://github.com/richardcedric436-dev" target="_blank" rel="noopener">Mon GitHub</a>
     </div>
